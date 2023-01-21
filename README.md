@@ -9,6 +9,7 @@
 ## To run the project
 
 - run npm i to install all dependencies
+- create a .env file
 - configure env if you want to use some particular mongoDB instance (optional, uses localhost of mongoDB by default)
 - add a secret of your choice for passport in the env(key defined in .env.example)
 - run command npm run start:dev or npm run start
