@@ -1,3 +1,4 @@
+import { ApiProperty } from '@nestjs/swagger';
 import { Type } from 'class-transformer';
 import {
   ArrayNotEmpty,
@@ -9,16 +10,19 @@ import {
 } from 'class-validator';
 
 class ProductDetails {
+  @ApiProperty()
   @IsString()
   @IsNotEmpty()
   name: string;
 
+  @ApiProperty()
   @IsNumber()
   @IsNotEmpty()
   price: number;
 }
 
 export class CreateCatalogDto {
+  @ApiProperty({ type: [ProductDetails] })
   @IsArray()
   @ArrayNotEmpty()
   @ValidateNested({ each: true })
