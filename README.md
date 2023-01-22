@@ -15,3 +15,4 @@
 - run command npm run start:dev or npm run start
 - you are good to start
 - by default, the project runs on localhost:8000, this can be changed by adding PORT variable in .env file
+- go to http://localhost:8000/api to get the swagger documentation of all the APIs and required params and body of each request
