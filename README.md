@@ -14,3 +14,4 @@
 - add a secret of your choice for passport in the env(key defined in .env.example)
 - run command npm run start:dev or npm run start
 - you are good to start
+- by default, the project runs on localhost:8000, this can be changed by adding PORT variable in .env file
