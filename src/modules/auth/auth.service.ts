@@ -30,7 +30,6 @@ export class AuthService {
 
     try {
       const createdUser = await this.userModel.create(payload);
-      // TODO: if userType is seller, create catalog
       return this.signToken(createdUser._id, createdUser.userType);
     } catch (e) {
       if (e.code === 11000) {
